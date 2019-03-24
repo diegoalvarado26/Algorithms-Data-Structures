@@ -1,11 +1,13 @@
 package TP_1.ejercicio_3;
 
 
+import java.lang.reflect.Array;
+
 public class Ejercicio_3 {
 
 
-	public static Integer[] merge(Integer[] a, Integer[] b) {
-		Integer[] c = new Integer[a.length + b.length];
+	public static <T extends Comparable<T>> T[] merge(T[] a, T[] b) {
+		final T[] c = (T[]) Array.newInstance(a.getClass().getComponentType(), a.length + b.length);
 
 		int indexOfC = 0;
 		int indexOfA = 0;
