@@ -65,4 +65,23 @@ public class SortTest {
 
         System.out.println(Arrays.toString(array));
     }
+
+    @Test
+    public void test006_BubbleSortAllTypes(){
+        BubbleSort bubbleSort = new BubbleSort();
+
+        Plane[] planes = {new Plane(20, "Latam"), new Plane(15, "Aerolineas"), new Plane(20, "Aerolineas"), new Plane(15, "Latam")};
+
+        for (int i = 0; i < planes.length; i++) {
+            System.out.print("Company: " + planes[i].getCompany() + " ID: " + planes[i].getId() + "\n");
+        }
+
+        System.out.println();
+
+        bubbleSort.allTypesSort(planes);
+
+        for (int i = 0; i < planes.length; i++) {
+            System.out.print("Company: " + planes[i].getCompany() + " ID: " + planes[i].getId() + "\n");
+        }
+    }
 }

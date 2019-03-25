@@ -61,12 +61,4 @@ public class InsertionSort {
             System.out.print(array[i] + " ");
         }
     }
-
-    // Test
-    public static void main(String[] args) {
-        InsertionSort ob = new InsertionSort();
-        int[] array = {60, 25, 10, 22, 11};
-        ob.sort(array);
-        System.out.println("Sorted array");
-        ob.printArray(array);
-    }}
+}

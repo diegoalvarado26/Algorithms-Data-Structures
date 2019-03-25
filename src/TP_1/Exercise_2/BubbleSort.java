@@ -59,13 +59,4 @@ public class BubbleSort {
             System.out.print(array[i] + " ");
         }
     }
-
-    // Test
-    public static void main(String[] args) {
-        BubbleSort ob = new BubbleSort();
-        int[] array = {60, 25, 10, 22, 11};
-        ob.sort(array);
-        System.out.println("Sorted array");
-        ob.printArray(array);
-    }
 }
